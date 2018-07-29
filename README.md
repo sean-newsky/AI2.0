@@ -1,38 +1,39 @@
 # Build Instructions
 
 Step 0: Download snort-2.9.11.1 tarball from snort.org and unzip the tarball
-''' bash
+
+```bash
 tar xzvf snort-2.9.11.1.tar.gz
+```
 
 Step 1: Enter the extracted snort source directory
-''' bash
+```bash
 cd snort-2.9.11.1
-'''
+```
 
 Step 2: build the snort
-''' bash
+```bash
 ./configure
 ./make
 ./make install
-'''
+```
 
 Step 3: copy minipiggy folder into snort-2.9.11.1/src/ and unizip it
-''' bash
+```bash
 cp minipiggy.zip snort-2.9.11.1/src
 unzip minipyggy.zip
-'''
+```
 
 Step 4: enter the minipiggy directory
-''' bash
+```bash
 cd src/minipiggy
-'''
+```
 
 Step 5: build and install the library
-'''bash
+```bash
 make
 make install
-'''
-
+```
 
 ## Generate SO rules
 
